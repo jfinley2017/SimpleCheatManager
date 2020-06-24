@@ -16,7 +16,7 @@ Documentation is provided in source as well as here.
 
 # 3.) Running existing cheats.
 - As shown above, you can run cheats through the console command `.
-- The way cheats are ran depends on how they were implemented in your derived CheatManager class. For example a cheat declared with the following method signature: vold `GiveGold(float Amount)` will be ran by 
+- The way cheats are ran depends on how they were implemented in your derived CheatManager class. For example a cheat declared with the following method signature: `vold GiveGold(float Amount)` will be ran by "GiveGold 50" in the console window.
 
 # 4.) Writing new cheats.
 - Declare a new cheat with UFUNCTION(Exec) in YourCheatManager.h, which should be derived from SimpleCheatManager. 
