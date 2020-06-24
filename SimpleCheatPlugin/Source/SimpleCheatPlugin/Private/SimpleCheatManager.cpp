@@ -1,3 +1,4 @@
+// Copyright 2020 Joe Finley. All Rights Reserved.
 
 #include "SimpleCheatManager.h"
 #include "SimpleCheatPlugin.h"
