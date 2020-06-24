@@ -27,7 +27,7 @@ namespace ForwardDeclare { class UWorld; }
  * To create a new cheat:
  * 1.) Declare the new cheat here, with UFUNCTION(exec). The cheat will appear in the console as the function name. 
        Consider using a common prefix for your cheats to make searching easier.
- * 2.) Define the function in PredCheatManager.cpp, doing any logic you wish. Use GetOuterPlayerController() to retreive the player invoking the cheat.
+ * 2.) Define the function in MyNewSimpleCheatManager.cpp, doing any logic you wish. Use GetOuterAPlayerController() to retreive the player invoking the cheat.
  *     a.) If the cheat requires authority, route your cheat through ServerCheat(). The string passed to ServerCheat() must be equivilent to the console command.
            eg. If you are invoking MyCheat VarOne VarTwo, the string passed to ServerCheat() must be "MyCheat Var1 Var2".
            eg. using above FUNC_NAME macro: ServerCheat(FString::Printf(TEXT("%s"), *FUNC_NAME))

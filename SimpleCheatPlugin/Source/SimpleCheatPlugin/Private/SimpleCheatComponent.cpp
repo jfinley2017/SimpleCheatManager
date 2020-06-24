@@ -34,7 +34,7 @@ void USimpleCheatComponent::SetupDefaults()
     APlayerController* OwnerAsPC = Cast<APlayerController>(GetOwner());
     if (!OwnerAsPC)
     {
-        UE_LOG(LogSimpleCheatPlugin, Error, TEXT("Owner %s is not a Player Controller. SimpleCheatComponent should only be attached to Player Controllers."))
+        UE_LOG(LogSimpleCheatPlugin, Error, TEXT("Owner %s is not a Player Controller. SimpleCheatComponent should only be attached to Player Controllers."), *GetNameSafe(GetOwner()))
         return;
     }
 
@@ -44,7 +44,7 @@ void USimpleCheatComponent::SetupDefaults()
     UCheatManager* OwningCheatManager = OwnerAsPC->CheatManager;
     if (!OwningCheatManager)
     {
-        UE_LOG(LogSimpleCheatPlugin, Error, TEXT("Owner %s does not have an instantiated CheatManager. Cheats cannot be ran without an instantiated CheatManager."))
+        UE_LOG(LogSimpleCheatPlugin, Error, TEXT("Owner %s does not have an instantiated CheatManager. Cheats cannot be ran without an instantiated CheatManager."), *GetNameSafe(GetOwner()))
         return;
     }
 
