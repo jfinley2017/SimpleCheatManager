@@ -1,5 +1,5 @@
 # SimpleCheatManager
-A plug-and-play cheat manager extension that allows for the creation of cheats for debugging/prototyping in a multiplayer game. Currently only compatible with c++ projects.
+A plug-and-play UE4 CheatManager extension that allows for the creation of cheats for debugging/prototyping in a multiplayer game. Currently only compatible with c++ projects.
 Documentation is provided in source as well as here.
 
 # 1.) Enabling the plugin
