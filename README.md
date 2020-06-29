@@ -27,6 +27,14 @@ Documentation is provided in source as well as here.
 
 1.) Server-Only grant gold.
 
+.h
+
+```
+UFUNCTION(Exec)
+void GrantGold(float Amount);
+```
+
+.cpp
 ```
 void UMySimpleCheatManager::GrantGold(float Amount)
 {
