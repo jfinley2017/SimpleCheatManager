@@ -15,6 +15,9 @@ Documentation is provided in source as well as here.
 - Verify everything is setup correctly by beginning play and opening the console command ` and submitting SimpleCheatTest. If you are running a networked PIE instance, an Authority and Client string should appear on screen. If you are not running a networked PIE instance, only an Authority string should appear on screen.
 
 # 3.) Running existing cheats.
+
+  ![uproject-image](https://cdn.discordapp.com/attachments/381955162387906572/725423448226005083/unknown.png)
+
 - As shown above, you can run cheats through the console command `.
 - The way cheats are ran depends on how they were implemented in your derived CheatManager class. For example a cheat declared with the following method signature: `vold GiveGold(float Amount)` will be ran by "GiveGold 50" in the console window.
 
